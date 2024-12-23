@@ -1,8 +1,16 @@
 ---
-const platform: string = "github";
-const username: string = "andreicomaneci";
+import Social from './Social.astro';
 ---
 
+<style>
+    footer {
+        display: flex;
+        gap: 1rem;
+        margin-top: 2rem;
+    }
+</style>
+
 <footer>
-    <p>Learn more about my projects on <a href={`https://www.${platform}.com/${username}`}>{platform}</a>!</p>
+    <Social platform={"github"} username={"andreicomaneci"} />
+    <Social platform={"linkedin"} username={"in/andrei-comăneci-967048141"} /> <!-- LinkedIn has a nonstandard way to link username to webpage -->
 </footer>
